@@ -10,7 +10,7 @@ class FullPageTest
   describe 'QA site test' do
 
     before(:each) do
-      @driver = Selenium::WebDriver.for :firefox
+      @driver = Selenium::WebDriver.for :chrome
       @base_url = 'http://www.demoqa.com'
       @accept_next_alert = true
       @driver.manage.timeouts.implicit_wait = 10
